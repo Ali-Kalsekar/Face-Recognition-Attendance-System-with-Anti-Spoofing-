@@ -1,5 +1,20 @@
 # Face Recognition Attendance System with Anti-Spoofing
 
+[![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![OpenCV](https://img.shields.io/badge/OpenCV-4.x-5C3EE8?logo=opencv&logoColor=white)](https://opencv.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.x-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+Real-time face recognition attendance system with anti-spoofing and SQLite logging. Built for practical deployment with modular architecture, registration flows, reporting scripts, and webcam/video support.
+
+## Highlights
+
+- Real-time face detection and recognition (multi-face supported)
+- Anti-spoofing with liveness checks (blink/motion)
+- Automatic attendance marking with duplicate-entry prevention
+- SQLite persistence with exportable CSV reports
+- Clean modular Python structure for scaling and maintenance
+
 Complete production-ready Face Recognition Attendance System with anti-spoofing capabilities using OpenCV and Deep Learning. The system detects faces, recognizes registered users, prevents spoofing attacks, and stores attendance records automatically in a database.
 
 ## 🎯 Features

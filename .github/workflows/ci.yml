@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  lint-and-smoke:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install CI dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install opencv-python numpy pandas pyyaml scipy python-dotenv tqdm
+
+      - name: Syntax check
+        run: |
+          python -m py_compile main.py
+          python -m py_compile register.py
+          python -m py_compile report.py
+          python -m py_compile video_processor.py
+          python -m py_compile health_check.py
+
+      - name: Import smoke test
+        run: |
+          python -c "from face_detection import FaceDetector; print('FaceDetector OK')"
+          python -c "from face_recognition import FaceRecognizer; print('FaceRecognizer OK')"
+          python -c "from database import AttendanceDatabase; print('AttendanceDatabase OK')"
