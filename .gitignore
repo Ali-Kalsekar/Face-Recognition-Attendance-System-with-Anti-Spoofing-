@@ -1,0 +1,64 @@
+# Git ignore file for Face Recognition Attendance System
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Project specific
+database/attendance.db
+output/*.csv
+output/*.log
+dataset/known_faces/*
+!dataset/known_faces/.gitkeep
+models/*.pb
+models/*.pbtxt
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
+
+# System files
+Thumbs.db
+.directory
+
+# Environment variables
+.env
+.env.local
+
+# Logs
+*.log
+*.log.*
+
+# Database backups
+*.db-journal
+*.db-backup

@@ -1,0 +1,62 @@
+# Face Recognition Attendance System Configuration
+
+# Camera Settings
+camera:
+  index: 0                    # Webcam index (0 = default)
+  width: 640                  # Frame width
+  height: 480                 # Frame height
+  fps: 30                     # Target FPS
+
+# Face Detection Settings
+face_detection:
+  model: "dnn"                # "haarcascade" or "dnn"
+  confidence_threshold: 0.5   # Minimum detection confidence
+  scale_factor: 1.1           # Haar Cascade scale factor
+  neighbors: 5                # Haar Cascade neighbors
+
+# Face Recognition Settings
+face_recognition:
+  model: "hog"                # "hog" (fast) or "cnn" (accurate)
+  confidence_threshold: 0.6   # Recognition confidence threshold
+  distance_threshold: 0.6     # Face distance threshold
+
+# Liveness Detection Settings
+liveness_detection:
+  method: "blink_motion"      # "blink", "motion", "blink_motion", "cnn"
+  blink_threshold: 0.2        # Blink detection threshold
+  motion_threshold: 5.0       # Motion detection threshold
+  min_blinks_required: 2      # Minimum blinks for liveness
+  frame_check_interval: 5     # Check every N frames
+
+# Attendance Database Settings
+database:
+  path: "./database/attendance.db"
+  duplicate_prevention_minutes: 1440  # 24 hours
+
+# Display Settings
+display:
+  show_fps: true
+  show_confidence: true
+  show_liveness: true
+  box_color: [0, 255, 0]      # BGR format (green)
+  text_color: [255, 255, 255] # BGR format (white)
+  font_scale: 0.6
+  thickness: 2
+
+# Logging Settings
+logging:
+  level: "INFO"               # DEBUG, INFO, WARNING, ERROR
+  log_file: "./output/system.log"
+
+# User Registration
+registration:
+  min_samples: 5              # Minimum face samples per user
+  output_folder: "./dataset/known_faces"
+
+# System Settings
+system:
+  window_name: "Face Recognition Attendance System"
+  quit_key: "q"
+  register_key: "r"
+  record_key: "space"
+  min_frame_size: 20          # Minimum face size
