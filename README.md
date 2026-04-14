@@ -1,4 +1,5 @@
 # Face Recognition Attendance System with Anti-Spoofing
+> Last automated login update: 2026-04-14 12:41:38
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![OpenCV](https://img.shields.io/badge/OpenCV-4.x-5C3EE8?logo=opencv&logoColor=white)](https://opencv.org/)
@@ -17,27 +18,27 @@ Real-time face recognition attendance system with anti-spoofing and SQLite loggi
 
 Complete production-ready Face Recognition Attendance System with anti-spoofing capabilities using OpenCV and Deep Learning. The system detects faces, recognizes registered users, prevents spoofing attacks, and stores attendance records automatically in a database.
 
-## 🎯 Features
+## Ã°Å¸Å½Â¯ Features
 
 ### Core Features
-- ✅ **Real-Time Face Detection** - Detects faces using Haar Cascade or DNN models
-- ✅ **Face Recognition** - Identifies registered users with confidence scores
-- ✅ **Anti-Spoofing/Liveness Detection** - Prevents photo/video spoofing attacks
-- ✅ **Automatic Attendance** - Marks attendance automatically in database
-- ✅ **Duplicate Prevention** - Prevents duplicate entries within configured time window
-- ✅ **Real-Time FPS** - Shows FPS counter for performance monitoring
+- Ã¢Å“â€¦ **Real-Time Face Detection** - Detects faces using Haar Cascade or DNN models
+- Ã¢Å“â€¦ **Face Recognition** - Identifies registered users with confidence scores
+- Ã¢Å“â€¦ **Anti-Spoofing/Liveness Detection** - Prevents photo/video spoofing attacks
+- Ã¢Å“â€¦ **Automatic Attendance** - Marks attendance automatically in database
+- Ã¢Å“â€¦ **Duplicate Prevention** - Prevents duplicate entries within configured time window
+- Ã¢Å“â€¦ **Real-Time FPS** - Shows FPS counter for performance monitoring
 
 ### Advanced Features
-- 🔐 **Blink Detection** - Detects eye blinking for liveness
-- 📱 **Motion Detection** - Detects facial motion as liveness indicator
-- 👥 **Multi-Face Recognition** - Handles multiple faces in frame
-- 📊 **Attendance Reports** - Generate CSV reports and statistics
-- 🔧 **User Registration** - Interactive registration of new users
-- 📝 **SQLite Database** - Persistent attendance storage
-- 🎯 **Confidence Scoring** - Shows recognition confidence
-- 📋 **System Logging** - Comprehensive logging system
+- Ã°Å¸â€Â **Blink Detection** - Detects eye blinking for liveness
+- Ã°Å¸â€œÂ± **Motion Detection** - Detects facial motion as liveness indicator
+- Ã°Å¸â€˜Â¥ **Multi-Face Recognition** - Handles multiple faces in frame
+- Ã°Å¸â€œÅ  **Attendance Reports** - Generate CSV reports and statistics
+- Ã°Å¸â€Â§ **User Registration** - Interactive registration of new users
+- Ã°Å¸â€œÂ **SQLite Database** - Persistent attendance storage
+- Ã°Å¸Å½Â¯ **Confidence Scoring** - Shows recognition confidence
+- Ã°Å¸â€œâ€¹ **System Logging** - Comprehensive logging system
 
-## 📋 Requirements
+## Ã°Å¸â€œâ€¹ Requirements
 
 ### System Requirements
 - Python 3.8+
@@ -55,7 +56,7 @@ Complete production-ready Face Recognition Attendance System with anti-spoofing 
 - `mediapipe` - Face detection and landmarks
 - `pyyaml` - Configuration management
 
-## 🚀 Installation
+## Ã°Å¸Å¡â‚¬ Installation
 
 ### Step 1: Clone/Download the Project
 ```bash
@@ -87,7 +88,7 @@ mkdir -p database
 mkdir -p output
 ```
 
-## 📖 Usage Guide
+## Ã°Å¸â€œâ€“ Usage Guide
 
 ### Quick Start - Run the System
 ```bash
@@ -135,7 +136,7 @@ python report.py --stats
 - **'r'** - Register new user
 - **SPACE** - Capture during registration
 
-## ⚙️ Configuration
+## Ã¢Å¡â„¢Ã¯Â¸Â Configuration
 
 Edit `config/config.yaml` to customize:
 
@@ -170,53 +171,53 @@ database:
   duplicate_prevention_minutes: 1440  # 24 hours
 ```
 
-## 📂 Project Structure
+## Ã°Å¸â€œâ€š Project Structure
 
 ```
 face_attendance_system/
-├── main.py                          # Main application
-├── register.py                      # User registration script
-├── report.py                        # Report generation script
-├── requirements.txt                 # Python dependencies
-│
-├── face_detection/
-│   ├── __init__.py
-│   └── face_detector.py            # Face detection module
-│
-├── face_recognition/
-│   ├── __init__.py
-│   └── recognizer.py               # Face recognition module
-│
-├── liveness_detection/
-│   ├── __init__.py
-│   └── anti_spoof.py              # Liveness/anti-spoofing module
-│
-├── database/
-│   ├── __init__.py
-│   ├── attendance.db              # SQLite database (auto-created)
-│   └── attendance_db.py           # Database management
-│
-├── utils/
-│   ├── __init__.py
-│   ├── logger.py                  # Logging utility
-│   ├── fps.py                     # FPS counter
-│   └── draw.py                    # Drawing utilities
-│
-├── dataset/
-│   └── known_faces/               # Registered faces storage
-│
-├── models/
-│   └── (Pre-trained models)
-│
-├── config/
-│   └── config.yaml                # Configuration file
-│
-└── output/
-    ├── attendance_log.csv         # Exported attendance
-    └── system.log                 # System logs
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ main.py                          # Main application
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ register.py                      # User registration script
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ report.py                        # Report generation script
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ requirements.txt                 # Python dependencies
+Ã¢â€â€š
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ face_detection/
+Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ __init__.py
+Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ face_detector.py            # Face detection module
+Ã¢â€â€š
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ face_recognition/
+Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ __init__.py
+Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ recognizer.py               # Face recognition module
+Ã¢â€â€š
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ liveness_detection/
+Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ __init__.py
+Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ anti_spoof.py              # Liveness/anti-spoofing module
+Ã¢â€â€š
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ database/
+Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ __init__.py
+Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ attendance.db              # SQLite database (auto-created)
+Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ attendance_db.py           # Database management
+Ã¢â€â€š
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ utils/
+Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ __init__.py
+Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ logger.py                  # Logging utility
+Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ fps.py                     # FPS counter
+Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ draw.py                    # Drawing utilities
+Ã¢â€â€š
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ dataset/
+Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ known_faces/               # Registered faces storage
+Ã¢â€â€š
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ models/
+Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ (Pre-trained models)
+Ã¢â€â€š
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ config/
+Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ config.yaml                # Configuration file
+Ã¢â€â€š
+Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ output/
+    Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ attendance_log.csv         # Exported attendance
+    Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ system.log                 # System logs
 ```
 
-## 🔧 System Architecture
+## Ã°Å¸â€Â§ System Architecture
 
 ### Components
 
@@ -229,19 +230,19 @@ face_attendance_system/
 ### Data Flow
 ```
 Video Input
-    ↓
+    Ã¢â€ â€œ
 Face Detection
-    ↓
+    Ã¢â€ â€œ
 Face Recognition
-    ↓
+    Ã¢â€ â€œ
 Liveness Detection
-    ↓
+    Ã¢â€ â€œ
 Mark Attendance (if real + recognized)
-    ↓
+    Ã¢â€ â€œ
 Visualization & Storage
 ```
 
-## 📊 Database Schema
+## Ã°Å¸â€œÅ  Database Schema
 
 ### attendance Table
 ```sql
@@ -267,7 +268,7 @@ CREATE TABLE users (
 );
 ```
 
-## 🎨 Visualization
+## Ã°Å¸Å½Â¨ Visualization
 
 The system displays:
 - **Face Bounding Box** - Green box around detected face
@@ -277,15 +278,15 @@ The system displays:
 - **FPS Counter** - Real-time FPS
 
 ```
-┌─────────────────────┐
-│    Ali             │
-│  Conf: 0.95        │
-│  Status: REAL      │ FPS: 25.5
-│                   │
-└─────────────────────┘
+Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â
+Ã¢â€â€š    Ali             Ã¢â€â€š
+Ã¢â€â€š  Conf: 0.95        Ã¢â€â€š
+Ã¢â€â€š  Status: REAL      Ã¢â€â€š FPS: 25.5
+Ã¢â€â€š                   Ã¢â€â€š
+Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ
 ```
 
-## 🚀 Performance Optimization
+## Ã°Å¸Å¡â‚¬ Performance Optimization
 
 ### GPU Support
 To use GPU acceleration (if available):
@@ -303,7 +304,7 @@ face_recognition:
   model: "cnn"  # For accuracy over speed
 ```
 
-## 🐛 Troubleshooting
+## Ã°Å¸Ââ€º Troubleshooting
 
 ### Camera Not Opening
 ```bash
@@ -326,7 +327,7 @@ python -c "import cv2; print(cv2.VideoCapture(0).isOpened())"
 - Use HOG model instead of CNN
 - Update graphics drivers
 
-## 📝 Example Usage
+## Ã°Å¸â€œÂ Example Usage
 
 ### Complete Workflow
 
@@ -348,7 +349,7 @@ python report.py --today
 python report.py --export
 ```
 
-## 🎓 Training & Customization
+## Ã°Å¸Å½â€œ Training & Customization
 
 ### Adding More Face Samples
 ```bash
@@ -368,7 +369,7 @@ face_recognition:
   distance_threshold: 0.5    # Lower = stricter
 ```
 
-## 📈 Scalability
+## Ã°Å¸â€œË† Scalability
 
 The system supports:
 - Multi-camera setups (modify config)
@@ -376,7 +377,7 @@ The system supports:
 - Long-term database (auto-archives old records)
 - Distributed processing (with modifications)
 
-## 🔐 Security Features
+## Ã°Å¸â€Â Security Features
 
 1. **Anti-Spoofing** - Prevents photo/video attacks
 2. **Liveness Detection** - Ensures real face
@@ -384,7 +385,7 @@ The system supports:
 4. **Confidence Threshold** - Rejects low-confidence matches
 5. **Logging** - Full audit trail
 
-## 📞 Support & Troubleshooting
+## Ã°Å¸â€œÅ¾ Support & Troubleshooting
 
 ### Check System Status
 ```bash
@@ -407,15 +408,15 @@ cat output/system_DD_MM_YYYY.log
 | Slow performance | Use HOG model, reduce resolution |
 | Database locked | Restart application |
 
-## 📄 License
+## Ã°Å¸â€œâ€ž License
 
 This system is provided as-is for educational and commercial use.
 
-## 🤝 Contributing
+## Ã°Å¸Â¤Â Contributing
 
 Improvements and suggestions welcome!
 
-## 📚 References
+## Ã°Å¸â€œÅ¡ References
 
 - [OpenCV Documentation](https://docs.opencv.org/)
 - [face_recognition Library](https://github.com/ageitgey/face_recognition)
@@ -424,7 +425,7 @@ Improvements and suggestions welcome!
 
 ---
 
-**Built with ❤️ using Python, OpenCV, and Deep Learning**
+**Built with Ã¢ÂÂ¤Ã¯Â¸Â using Python, OpenCV, and Deep Learning**
 
 For production deployment, consider:
 - GPU acceleration
