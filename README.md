@@ -1,5 +1,5 @@
 # Face Recognition Attendance System with Anti-Spoofing
-> Last automated login update: 2026-10-13 13:40:53
+> Last automated login update: 2026-10-13 20:30:47
 
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
